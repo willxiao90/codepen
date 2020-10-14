@@ -26,5 +26,5 @@ function mergeArr(arr1, arr2){
   return result;
 }
 
-const arr = mergeArr([3, 5, 7], [2, 4, 6, 8, 10])
-console.log(arr)
+const res = mergeArr([3, 5, 7], [2, 4, 6, 8, 10])
+console.log(res)
