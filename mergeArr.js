@@ -1,36 +1,30 @@
 // 合并两个有序数组（leetcode #88）
 function mergeArr(arr1, arr2){
-  const len1 = arr1.length;
-  const len2 = arr2.length;
   const result = [];
   let i = 0;
   let j = 0;
-  while(i < len1 && j < len2){
+  while(i < arr1.length && j < arr2.length){
     if(arr1[i] <= arr2[j]){
       result.push(arr1[i]);
       i++;
-      console.log(result, i, j)
     }else{
       result.push(arr2[j]);
       j++;
-      console.log(result, i, j)
     }
   }
   
-  while(i < len1){
+  while(i < arr1.length){
     result.push(arr1[i]);
     i++;
-    console.log(result, i, j)
   }
   
-  while(j < len2){
+  while(j < arr2.length){
     result.push(arr2[j]);
     j++;
-    console.log(result, i, j)
   }
   
   return result;
 }
 
-const arr3 = mergeArr([3, 5, 7], [2, 4, 6, 8, 10])
-console.log(arr3)
+const arr = mergeArr([3, 5, 7], [2, 4, 6, 8, 10])
+console.log(arr)
