@@ -32,5 +32,5 @@ function bsearch2(arr, val) {
 }
 
 const arr = [3, 7, 9, 10, 14, 17, 20, 23, 26];
-const res = bsearch2(arr, 11, 0, 8);
+const res = bsearch2(arr, 10, 0, 8);
 console.log(res);
