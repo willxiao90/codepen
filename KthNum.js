@@ -25,6 +25,7 @@ function partition(arr, p, r) {
  * 查找第 K 大元素（利用快排思想实现）
  */
 function KthNum(arr, p, r, k) {
+  if (k > arr.length) return false;
   if (p >= r) return arr[p];
   const q = partition(arr, p, r);
   if (q + 1 === k) {
