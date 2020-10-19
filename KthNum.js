@@ -22,7 +22,7 @@ function partition(arr, p, r) {
 }
 
 /**
- * 查找第 K 大元素（利用快排思想实现）
+ * 查找第 K 大元素（利用快排思想实现） 
  */
 function KthNum(arr, p, r, k) {
   if (k > arr.length) return false;
