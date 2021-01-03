@@ -18,7 +18,7 @@ function bubbleSort(arr) {
     }
 
     if (swap === 0) break;
-    console.log(arr);
+    // console.log(arr);
   }
 }
 
