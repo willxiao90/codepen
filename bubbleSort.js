@@ -6,16 +6,22 @@
  */
 function bubbleSort(arr) {
   for (let i = 0; i < arr.length - 1; i++) {
+    let swap = 0; // 交换次数
+
     for (let j = 0; j < arr.length - 1 - i; j++) {
       if (arr[j] > arr[j + 1]) {
         const temp = arr[j + 1];
         arr[j + 1] = arr[j];
         arr[j] = temp;
+        swap++;
       }
     }
+
+    if (swap === 0) break;
+    console.log(arr);
   }
 }
 
-const arr = [5, 2, 4, 8, 3, 1];
+const arr = [4, 3, 8, 6, 2, 7];
 bubbleSort(arr);
-console.log(arr);
+// console.log(arr);
