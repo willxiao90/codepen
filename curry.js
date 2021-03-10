@@ -1,6 +1,6 @@
 function curry(func, ...args) {
   const len = func.length; // 参数个数
-  console.log(args);
+  console.log(args, len);
   if (args.length >= len) {
     return func.apply(null, args);
   } else {
